@@ -1,0 +1,6 @@
+.my-cells {
+  background-color: #ffffff;
+  margin-top: 8px;
+  border-top: 1rpx solid #f8f8f8;
+  border-bottom: 1rpx solid #f8f8f8;
+}

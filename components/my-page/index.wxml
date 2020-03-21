@@ -1,0 +1,1 @@
+<view class="my-page full" scroll-y="{{ true }}"><slot></slot></view>

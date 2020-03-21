@@ -1,0 +1,4 @@
+@import '../../app.wxss';
+.my-page {
+  background-color: #f8f8f8;
+}

@@ -1,0 +1,1 @@
+<image class="my-pic" src="{{ img }}" mode="aspectFill"></image>

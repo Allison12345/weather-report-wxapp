@@ -1,0 +1,20 @@
+<my-page>
+  <my-cells class="txt-center">
+    <my-pic img="{{ img }}"></my-pic>
+    <view class="xa-txt">小艾天气</view>
+  </my-cells>
+  <my-cells>
+    <view class="tq-txt">天气</view>
+    <view class="flex"
+      ><search-cell
+        class="flex-1"
+        wx:for="{{ searchLists }}"
+        wx:key="index"
+        img="{{ item.img }}"
+        title="{{ item.title }}"
+        desc="{{ item.desc }}"
+        local="{{ item.local }}"
+      ></search-cell
+    ></view>
+  </my-cells>
+</my-page>
