@@ -1,0 +1,21 @@
+.quote {
+  height: 300px;
+  background-image: url('https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/timg.jpg?sign=b68d250dad1dd1c5cf8ada94767eaae8&t=1584797831');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.quote-cover {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  font-size: 18px;
+  color: purple;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 2555, 0.3);
+}

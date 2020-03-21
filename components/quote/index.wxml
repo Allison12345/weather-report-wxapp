@@ -1,0 +1,3 @@
+<view class="quote">
+  <view class="quote-cover">{{ content }} </view>
+</view>

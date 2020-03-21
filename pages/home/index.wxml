@@ -17,4 +17,5 @@
       ></search-cell
     ></view>
   </my-cells>
+  <my-cells><quote></quote></my-cells>
 </my-page>
