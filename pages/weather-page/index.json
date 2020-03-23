@@ -1,3 +1,10 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-page": "../../components/my-page/index",
+    "my-cells": "../../components/my-cells/index",
+    "my-icon": "../../components/my-icon/index",
+    "current-location-change": "../../components/current-location-change/index",
+    "air-index": "../../components/air-index/index",
+    "air-index-info": "../../components/air-index-info/index"
+  }
 }

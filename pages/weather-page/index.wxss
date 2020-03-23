@@ -1,1 +1,8 @@
-/* pages/weather-page/index.wxss */
+.wp-image {
+  background-image: url('https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/timg.jpg?sign=b68d250dad1dd1c5cf8ada94767eaae8&t=1584797831');
+  width: 100%;
+  height: 480px;
+}
+.wp-hd {
+  color: #fff;
+}

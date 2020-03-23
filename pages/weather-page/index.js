@@ -1,66 +1,13 @@
-// pages/weather-page/index.js
+const cityInfoList = require('./cityInfoList.js')
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+    city: '贵州省安顺市平坝区',
+    cityInfoList,
+    img:
+      'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/pin-outline.png?sign=d95d3d5811c0a1922e0f9c98c3b31231&t=1584787193'
   }
+  // onLoad: function(query) {
+  //   const { city } = query
+  //   this.setData({ city })
+  // }
 })

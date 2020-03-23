@@ -4,7 +4,7 @@ Component({
   },
   lifetimes: {
     attached: function() {
-      this.getQuote()
+      //this.getQuote()
     }
   },
   methods: {

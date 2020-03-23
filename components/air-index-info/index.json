@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "air-index": "../air-index/index"
+  }
+}

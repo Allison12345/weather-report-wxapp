@@ -1,0 +1,4 @@
+.air-index {
+  border-radius: 20%;
+  padding: 6px 2px;
+}

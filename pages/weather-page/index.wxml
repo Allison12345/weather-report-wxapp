@@ -1,2 +1,20 @@
-<!--pages/weather-page/index.wxml-->
-<text>pages/weather-page/index.wxml</text>
+<my-page>
+  <view class="wp-image ">
+    <view class="wp-hd txt-center">
+      <my-icon class="wp-icon" img="{{ img }}"></my-icon>
+      <current-location-change city="{{ city }}"></current-location-change
+    ></view>
+    <view class="wp-left">
+      <air-index
+        air="{{ cityInfoList[3][0].air }}"
+        air_level="{{ cityInfoList.data[0].air_level }}"
+      ></air-index>
+      <air-index-info
+        air="{{ cityInfoList.data.air }}"
+        air_level="{{ cityInfoList.data[0].air_level }}"
+        air_tips="{{ cityInfoList.data[0].air_tips }}"
+      ></air-index-info>
+    </view>
+    <view class="wp-right"> </view>
+  </view>
+</my-page>
