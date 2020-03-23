@@ -1,5 +1,5 @@
 const airDict = require('./config')
-const computedBehavior = require('miniprogram-computed')
+const computedBehavior = require('../../node_modules/miniprogram-computed')
 Component({
   behaviors: [computedBehavior],
   properties: {
