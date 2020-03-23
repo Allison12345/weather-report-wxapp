@@ -1,4 +1,4 @@
-const cityInfoList = {
+module.exports = {
   cityid: '101120201', //城市ID
   update_time: '2018-12-08 08:00:00', //最后更新时间
   city: '青岛',

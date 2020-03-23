@@ -6,13 +6,13 @@
     ></view>
     <view class="wp-left">
       <air-index
-        air="{{ cityInfoList[3][0].air }}"
+        air="{{ cityInfo.data[0].air }}"
         air_level="{{ cityInfoList.data[0].air_level }}"
       ></air-index>
       <air-index-info
-        air="{{ cityInfoList.data.air }}"
-        air_level="{{ cityInfoList.data[0].air_level }}"
-        air_tips="{{ cityInfoList.data[0].air_tips }}"
+        air="{{ cityInfo.data[0].air }}"
+        air_level="{{ cityInfo.data[0].air_level }}"
+        air_tips="{{ cityInfo.data[0].air_tips }}"
       ></air-index-info>
     </view>
     <view class="wp-right"> </view>

@@ -3,6 +3,10 @@
   width: 100%;
   height: 480px;
 }
+.wp-icon {
+  color: #fff;
+  margin-top: 6px;
+}
 .wp-hd {
   color: #fff;
 }
