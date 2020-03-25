@@ -4,17 +4,16 @@
       <my-icon class="wp-icon" img="{{ img }}"></my-icon>
       <current-location-change city="{{ city }}"></current-location-change
     ></view>
-    <view class="wp-left">
       <air-index
+      class="wp-air-index"
         air="{{ cityInfo.data[0].air }}"
-        air_level="{{ cityInfoList.data[0].air_level }}"
+        air_level="{{ cityInfo.data[0].air_level }}"
       ></air-index>
       <air-index-info
+        class="wp-air-index-info"
         air="{{ cityInfo.data[0].air }}"
         air_level="{{ cityInfo.data[0].air_level }}"
         air_tips="{{ cityInfo.data[0].air_tips }}"
       ></air-index-info>
-    </view>
-    <view class="wp-right"> </view>
   </view>
 </my-page>

@@ -1,4 +1,4 @@
-<span class="air-index" wx:style="background-color: {{ cptColor }}">
+<span class="air-index {{color}}" wx:style="background-color: {{ color }} ">
   <view class="air-index__hd">{{ air }}</view>
   <view class="air-index__ft">{{ air_level }}</view>
 </span>

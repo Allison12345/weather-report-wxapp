@@ -1,1 +1,17 @@
-/* components/air-index-info/index.wxss */
+.air-index-info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.air-index-info__bd{
+    background-image: url('"https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/pin-outline.svg?sign=d294216ec6cdfaf581514650f28dc43a&t=1585037342"');
+    text-align: center;
+}
+.air_level{
+    margin-right: 40px;
+}
+.air-index-info__ft{
+    width: 100px;
+    height: 80px;
+}

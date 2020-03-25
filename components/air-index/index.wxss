@@ -1,4 +1,8 @@
 .air-index {
+  position: absolute;
   border-radius: 20%;
-  padding: 6px 2px;
+  padding: 8px 14px;
+}
+.green {
+  background-color: green;
 }

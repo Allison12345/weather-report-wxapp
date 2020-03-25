@@ -23,7 +23,8 @@ Component({
       wx.getLocation({
         success: res => {
           //this.getCity(res.latitude, res.longitude)
-          wx.navigateTo({ url: '/pages/weather-page/index' })
+          wx.navigateTo({ url: '/pages/weather-page/index' }),
+          console.log('local')
         }
       })
     },
