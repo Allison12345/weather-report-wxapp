@@ -1,5 +1,5 @@
 .wp-image {
-  background-image: url('https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/timg.jpg?sign=b68d250dad1dd1c5cf8ada94767eaae8&t=1584797831');
+  background-image: url('https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/u%3D952675025%2C1052748055%26fm%3D26%26gp%3D0.jpg?sign=9746154d6951b53c7f3331d6ae13dd65&t=1585310440');
   width: 100%;
   height: 480px;
 }
@@ -14,12 +14,10 @@
 .wp-air-index{
   width: 80px;
   height: 80px;
-  position: relative;
+  margin-top:20px;
+  margin-left: 10px;
+  position: fixed;
 }
 .air-index-info{
-  width: 200px;
-  height: 250px;
-  margin-top: 80px ;
-  margin-left: 60px;
-  position: relative;
+  position: fixed;
 }

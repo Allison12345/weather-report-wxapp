@@ -1,8 +1,11 @@
 <view class="air-index-info">
   <view class="air-index-info__bd">
-    <view class="air-title">空气质量指数</view>
-    <view class="air-number">{{ air }}</view>
+    <span class="air-icon" bindtap='onInfoClose'>✖️</span>
+    <view class="air-index-info__bd-content">
+      <view class="air-title">空气质量指数</view>
+      <view class="air-number">{{ air }}</view>
     <air-index class='air_level' air_level="{{ air_level }}"></air-index>
+  </view>
   </view>
   <view class="air-index-info__ft">{{ air_tips }}</view>
 </view>

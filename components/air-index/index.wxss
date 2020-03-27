@@ -1,8 +1,15 @@
 .air-index {
   position: absolute;
   border-radius: 20%;
-  padding: 8px 14px;
+  padding: 3px 10px;
+  color: #fff;
 }
 .green {
   background-color: green;
+}
+.air-index__hd{
+  font-size: small;
+}
+.air-index__ft{
+  font-size: small;
 }

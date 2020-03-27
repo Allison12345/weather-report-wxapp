@@ -5,15 +5,18 @@
       <current-location-change city="{{ city }}"></current-location-change
     ></view>
       <air-index
-      class="wp-air-index"
+        class="wp-air-index"
         air="{{ cityInfo.data[0].air }}"
         air_level="{{ cityInfo.data[0].air_level }}"
+        bind:onInfoShow='onInfoShow'
       ></air-index>
       <air-index-info
         class="wp-air-index-info"
+        wx:if="{{ isInfoShown}}"
         air="{{ cityInfo.data[0].air }}"
         air_level="{{ cityInfo.data[0].air_level }}"
         air_tips="{{ cityInfo.data[0].air_tips }}"
+        bind:onInfoClose="onInfoClose"
       ></air-index-info>
   </view>
 </my-page>

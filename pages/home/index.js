@@ -5,8 +5,7 @@ Page({
     searchText: '',
     searchLists: [
       {
-        img:
-          'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/pin-outline.png?sign=d95d3d5811c0a1922e0f9c98c3b31231&t=1584787193',
+        img:"https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/pin-outline.png?sign=f91a4591de3d20bd74507e0adf04ef77&t=1585307262",
         title: '本地天气',
         desc: '本地实时天气',
         local: true
@@ -18,5 +17,5 @@ Page({
         desc: '其他地区天气'
       }
     ]
-  }
+  },
 })

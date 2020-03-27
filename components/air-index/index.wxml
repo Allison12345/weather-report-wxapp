@@ -1,4 +1,4 @@
-<span class="air-index {{color}}" wx:style="background-color: {{ color }} ">
+<span class="air-index {{color}}" wx:style="background-color: {{ color }} " bindtap='onInfoShow'>
   <view class="air-index__hd">{{ air }}</view>
   <view class="air-index__ft">{{ air_level }}</view>
 </span>

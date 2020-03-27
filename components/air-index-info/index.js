@@ -5,5 +5,9 @@ Component({
     air_tips: String
   },
   data: {},
-  methods: {}
+  methods: {
+    onInfoClose(){
+      this.triggerEvent('onInfoClose')
+    }
+  }
 })

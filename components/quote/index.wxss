@@ -1,6 +1,6 @@
 .quote {
   height: 300px;
-  background-image: url('https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/timg.jpg?sign=b68d250dad1dd1c5cf8ada94767eaae8&t=1584797831');
+  background-image: url("https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/u%3D952675025%2C1052748055%26fm%3D26%26gp%3D0.jpg?sign=eb4e230c097beaff8c8be1160f7e8437&t=1585310287");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;

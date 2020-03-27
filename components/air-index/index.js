@@ -19,5 +19,10 @@ Component({
     cptColor() {
       return airDict[this.properties.air_level] || 'green'
     }
+  },
+  methods:{
+    onInfoShow(){
+      this.triggerEvent("onInfoShow")
+    }
   }
 })

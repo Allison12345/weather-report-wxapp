@@ -1,17 +1,40 @@
 .air-index-info{
-    position: relative;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 250px;
+    margin: auto;
+    margin-top: 70px;
+    color: #fff;
+    border: 1px solid #ededed;
 }
 .air-index-info__bd{
-    background-image: url('"https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/pin-outline.svg?sign=d294216ec6cdfaf581514650f28dc43a&t=1585037342"');
+    background-image: url("https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/timg.jpg?sign=b67725f61459373e1de7247b6bf1280d&t=1585310362");
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.air-icon{
+    margin-left: 215px;
+    color: #fff;
+}
+.air-index-info__bd-content{
     text-align: center;
+}
+.air-title{
+    margin-top: 40px;
+}
+.air-number{
+    margin: 10px;
+    font-size: 38px;
 }
 .air_level{
     margin-right: 40px;
 }
 .air-index-info__ft{
-    width: 100px;
-    height: 80px;
+    text-align: left;
+    margin: 10px;
 }
