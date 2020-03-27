@@ -1,0 +1,6 @@
+<view class="today-air">
+    <p class="today-air-left">{{week}}
+        <p class="today-air-left__txt">今天</p>
+    </p>
+    <p class="today-air-right">{{tem1}}  ~  {{tem2}}   </p>
+</view>

@@ -1,4 +1,4 @@
-<my-page>
+<view class="weather-page bg-eded full">
   <view class="wp-image">
     <view class="wp-hd txt-center">
       <my-icon class="wp-icon" img="{{ img }}"></my-icon>
@@ -27,4 +27,10 @@
         bind:onInfoClose="onInfoClose"
       ></air-index-info>
   </view>
-</my-page>
+  <today-air
+    class="today-air"
+    week="{{cityInfo.data[0].week}}"
+    tem1="{{cityInfo.data[0].tem1}}"
+    tem2="{{cityInfo.data[0].tem2}}"
+  ></today-air>
+</view>

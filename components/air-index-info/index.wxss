@@ -28,7 +28,7 @@
 }
 .air-number{
     margin: 10px;
-    font-size: 38px;
+    font-size: 42px;
 }
 .air_level{
     margin-right: 40px;

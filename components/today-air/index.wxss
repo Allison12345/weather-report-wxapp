@@ -1,0 +1,19 @@
+.today-air{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.today-air-left{
+}
+.today-air-left__txt{
+margin-left: 5px;
+font-size: 12px;
+}
+.today-air-right{
+    padding-right: 20px;
+}
