@@ -1,0 +1,6 @@
+<view class="main-info">
+    <view class="main-info-tem">{{tem}}</view>
+    <view class="main-info-wea">{{wea}}</view>
+    <view class="main-info-win">{{win[0]}} {{win_speed}}</view>
+    <view class="main-info-tips"></view>
+</view>

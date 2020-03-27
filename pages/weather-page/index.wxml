@@ -1,9 +1,18 @@
 <my-page>
-  <view class="wp-image ">
+  <view class="wp-image">
     <view class="wp-hd txt-center">
       <my-icon class="wp-icon" img="{{ img }}"></my-icon>
       <current-location-change city="{{ city }}"></current-location-change
     ></view>
+    <view class="wp-main-info-outview">
+      <main-info 
+        class="wp-main-info"
+        tem="{{cityInfo.data[0].tem}}" 
+        wea='{{cityInfo.data[0].wea}}'
+        win="{{cityInfo.data[0].win}}"
+        win_speed='{{cityInfo.data[0].win_speed}}'
+        ></main-info>
+    </view>
       <air-index
         class="wp-air-index"
         air="{{ cityInfo.data[0].air }}"
@@ -11,7 +20,6 @@
         bind:onInfoShow='onInfoShow'
       ></air-index>
       <air-index-info
-        class="wp-air-index-info"
         wx:if="{{ isInfoShown}}"
         air="{{ cityInfo.data[0].air }}"
         air_level="{{ cityInfo.data[0].air_level }}"

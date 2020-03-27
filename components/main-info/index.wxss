@@ -1,0 +1,18 @@
+.main-info{
+  text-align: center;
+  color: #fff;
+}
+.main-info-tem{
+  font-size: 64px;
+  font-weight: 300;
+}
+.main-info-wea{
+  margin: 10px;
+  font-size: 24px;
+}
+.main-info-win{
+  font-size: 12;
+}
+.main-info-tips{
+  margin: 30px 0;
+}

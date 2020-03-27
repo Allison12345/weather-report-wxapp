@@ -11,13 +11,18 @@
 .wp-hd {
   color: #fff;
 }
-.wp-air-index{
-  width: 80px;
-  height: 80px;
-  margin-top:20px;
-  margin-left: 10px;
+.wp-main-info{
+  position: fixed;
+  margin-left: 142.5;
+  margin-top: 70px;
+}
+.wp-main-info-outview{
+  margin-left: 114px;
+}
+.wp-main-info{
   position: fixed;
 }
-.air-index-info{
-  position: fixed;
+.wp-air-index{
+  margin-top:20px;
+  margin-left: 10px;
 }
