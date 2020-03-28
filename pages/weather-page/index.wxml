@@ -1,20 +1,20 @@
-<view class="weather-page bg-eded full">
+;<view class="weather-page bg-eded full">
   <view class="wp-image">
     <view class="wp-hd flex-x-cc">
       <my-icon class="wp-my-icon" img="{{ img }}"></my-icon>
       <current-location-change city="{{ city }}"></current-location-change>
     </view>
-      <main-info
-        tem="{{ cityInfo.data[0].tem }}"
-        wea="{{ cityInfo.data[0].wea }}"
-        win="{{ cityInfo.data[0].win }}"
-        win_speed="{{ cityInfo.data[0].win_speed }}"
-      ></main-info>
+    <main-info
+      tem="{{ cityInfo.data[0].tem }}"
+      wea="{{ cityInfo.data[0].wea }}"
+      win="{{ cityInfo.data[0].win }}"
+      win_speed="{{ cityInfo.data[0].win_speed }}"
+    ></main-info>
     <view class="wp-air-index">
       <air-index
-      air="{{ cityInfo.data[0].air }}"
-      air_level="{{ cityInfo.data[0].air_level }}"
-      bind:onInfoShow="onInfoShow"
+        air="{{ cityInfo.data[0].air }}"
+        air_level="{{ cityInfo.data[0].air_level }}"
+        bind:onInfoShow="onInfoShow"
       ></air-index>
     </view>
     <air-index-info
