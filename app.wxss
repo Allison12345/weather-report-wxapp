@@ -24,6 +24,12 @@ page {
 .flex-1 {
   flex: 1;
 }
+.flex-x-cc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .m-lr-s {
   margin: 0 4px;
 }

@@ -1,6 +1,10 @@
 .main-info{
   text-align: center;
   color: #fff;
+  position: absolute;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 .main-info-tem{
   font-size: 72px;

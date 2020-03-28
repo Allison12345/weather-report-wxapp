@@ -2,10 +2,6 @@
   border-radius: 25%;
   padding: 3px 10px;
   color: #fff;
-  position: fixed;
-}
-.green {
-  background-color: green;
 }
 .air-index__hd{
   font-size: small;

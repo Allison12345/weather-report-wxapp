@@ -7,13 +7,9 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px;
-}
-.today-air-left{
+    box-sizing: border-box;
 }
 .today-air-left__txt{
 margin-left: 5px;
 font-size: 12px;
-}
-.today-air-right{
-    padding-right: 20px;
 }

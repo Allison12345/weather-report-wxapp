@@ -1,36 +1,33 @@
 <view class="weather-page bg-eded full">
   <view class="wp-image">
-    <view class="wp-hd txt-center">
-      <my-icon class="wp-icon" img="{{ img }}"></my-icon>
-      <current-location-change city="{{ city }}"></current-location-change
-    ></view>
-    <view class="wp-main-info-outview">
-      <main-info 
-        class="wp-main-info"
-        tem="{{cityInfo.data[0].tem}}" 
-        wea='{{cityInfo.data[0].wea}}'
-        win="{{cityInfo.data[0].win}}"
-        win_speed='{{cityInfo.data[0].win_speed}}'
-        ></main-info>
+    <view class="wp-hd flex-x-cc">
+      <my-icon class="wp-my-icon" img="{{ img }}"></my-icon>
+      <current-location-change city="{{ city }}"></current-location-change>
     </view>
+      <main-info
+        tem="{{ cityInfo.data[0].tem }}"
+        wea="{{ cityInfo.data[0].wea }}"
+        win="{{ cityInfo.data[0].win }}"
+        win_speed="{{ cityInfo.data[0].win_speed }}"
+      ></main-info>
+    <view class="wp-air-index">
       <air-index
-        class="wp-air-index"
-        air="{{ cityInfo.data[0].air }}"
-        air_level="{{ cityInfo.data[0].air_level }}"
-        bind:onInfoShow='onInfoShow'
+      air="{{ cityInfo.data[0].air }}"
+      air_level="{{ cityInfo.data[0].air_level }}"
+      bind:onInfoShow="onInfoShow"
       ></air-index>
-      <air-index-info
-        wx:if="{{ isInfoShown}}"
-        air="{{ cityInfo.data[0].air }}"
-        air_level="{{ cityInfo.data[0].air_level }}"
-        air_tips="{{ cityInfo.data[0].air_tips }}"
-        bind:onInfoClose="onInfoClose"
-      ></air-index-info>
+    </view>
+    <air-index-info
+      wx:if="{{ isInfoShown }}"
+      air="{{ cityInfo.data[0].air }}"
+      air_level="{{ cityInfo.data[0].air_level }}"
+      air_tips="{{ cityInfo.data[0].air_tips }}"
+      bind:onInfoClose="onInfoClose"
+    ></air-index-info>
   </view>
   <today-air
-    class="today-air"
-    week="{{cityInfo.data[0].week}}"
-    tem1="{{cityInfo.data[0].tem1}}"
-    tem2="{{cityInfo.data[0].tem2}}"
+    week="{{ cityInfo.data[0].week }}"
+    tem1="{{ cityInfo.data[0].tem1 }}"
+    tem2="{{ cityInfo.data[0].tem2 }}"
   ></today-air>
 </view>

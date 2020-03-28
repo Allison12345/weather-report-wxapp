@@ -4,9 +4,11 @@
     justify-content: space-between;
     width: 250px;
     color: #fff;
-    margin: auto;
-    margin-top: 70px;
     border: 1px solid #ededed;
+    position: absolute;
+    top:70px;
+    left:50%;
+    transform: translateX(-50%);
 }
 .air-index-info__bd{
     background-image: url("https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/timg.jpg?sign=b67725f61459373e1de7247b6bf1280d&t=1585310362");
@@ -30,10 +32,12 @@
     margin: 10px;
     font-size: 42px;
 }
-.air_level{
-    margin-right: 40px;
+.air-level{
+    display: inline-block;
 }
 .air-index-info__ft{
     text-align: left;
-    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    color: black;
 }

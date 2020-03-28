@@ -2,30 +2,17 @@
   background-image: url('https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/u%3D952675025%2C1052748055%26fm%3D26%26gp%3D0.jpg?sign=9746154d6951b53c7f3331d6ae13dd65&t=1585310440');
   width: 100%;
   height: 480px;
+  position: relative;
 }
-.wp-icon {
-  width: 10px;
-  height: 10px;
-  margin-top: 6px;
+.wp-hd{
+  padding-top: 4px;
 }
-.wp-hd {
-  color: #fff;
-}
-.wp-main-info{
-  position: fixed;
-  margin-left: 142.5;
-  margin-top: 70px;
-}
-.wp-main-info-outview{
-  margin-left: 114px;
-}
-.wp-main-info{
-  position: fixed;
+.wp-my-icon{
+  width: 16px;
+  height: 16px;
 }
 .wp-air-index{
-  margin-top:20px;
-  margin-left: 10px;
-}
-.today-air{
-  width: 100%;
+  position: absolute;
+  left: 10px;
+  top:30px
 }

@@ -1,1 +1,4 @@
-/* components/search-cell/index.wxss */
+.search-cell__left{
+    width: 28px;
+    height: 28px;
+}

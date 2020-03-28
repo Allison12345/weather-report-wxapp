@@ -1,6 +1,6 @@
 <view class="search-cell flex" bindtap="onTap">
-  <view class="search-cell__left">
-    <my-icon class="m-lr-s" img="{{ img }}"></my-icon>
+  <view class="search-cell__left m-lr-s">
+    <my-icon img="{{ img }}"></my-icon>
   </view>
   <view class="search-cell__right">
     <view class="search-cell__title">{{ title }}</view>
