@@ -1,6 +1,6 @@
-;<view class="weather-page bg-eded full">
+<view class="weather-page bg-eded full">
   <view class="wp-image">
-    <view class="wp-hd flex-x-cc">
+    <view class="wp-hd flex-x-cc" bindtap='onCityChange'>
       <my-icon class="wp-my-icon" img="{{ img }}"></my-icon>
       <current-location-change city="{{ city }}"></current-location-change>
     </view>

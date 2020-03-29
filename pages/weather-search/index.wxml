@@ -1,2 +1,8 @@
-<!--pages/weather-search/index.wxml-->
-<text>pages/weather-search/index.wxml</text>
+<view class="weather-search">
+  <weather-search-cell
+    wx:for="{{placeLists}}"
+    wx:key="index"
+    title="{{item.title}}"
+    placeLists='{{item.citys}}'
+  ></weather-search-cell>
+</view>

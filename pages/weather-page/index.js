@@ -2,6 +2,7 @@ const cityInfo = require('./cityInfo.js')
 Page({
   data: {
     city: '贵州省安顺市平坝区',
+    currentCity:'平坝区',
     cityInfo,
     isInfoShown:false,
     img:
@@ -16,5 +17,10 @@ Page({
   },
   onInfoClose(){
     this.setData({isInfoShown:false})
+  },
+  onCityChange(){
+    wx.navigateTo({
+      url:`/pages/weather-search/index?currentCity=${this.data.currentCity}`
+    })
   }
 })

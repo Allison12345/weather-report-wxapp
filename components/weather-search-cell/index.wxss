@@ -1,0 +1,23 @@
+.weather-search-cell{
+    margin: 10px 0 ; 
+}
+.weather-search-cell__hd{
+    font-size: 24px;
+    margin-left: 10px;
+}
+.weather-search-cell__bd{
+}
+.weather-search-cell__item{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 112px;
+    height: 42px;
+    background-color:#ededed;
+    border-radius: 20px;
+    display: inline-block
+}
+.weather-search-cell__content{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 40px
+}
