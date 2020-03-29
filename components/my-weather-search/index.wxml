@@ -1,13 +1,18 @@
 <view class="my-weather-search">
-    <view class="my-weather-outside">
-        <view class="my-weather-search__box">
-          <view class="my-weather-search__icon">
-            <my-icon img="{{img}}"></my-icon>
-          </view>
-          <view class="my-weather-search__content">
-            <view>搜索市,区,县等</view>
-          </view>
-        </view>
+  <view class="my-weather-outside">
+    <view class="my-weather-search__box">
+      <view class="my-weather-search__icon">
+        <my-icon img="{{img}}" />
       </view>
-    <view class="my-weather-search__cancel">取消</view>
+      <view class="my-weather-search__content">
+        <input
+          placeholder="搜索市,区,县等"
+          type="text"
+          confirm-type="search"
+          bindconfirm='onComfirm'
+        />
+      </view>
+    </view>
+  </view>
+  <view class="my-weather-search__cancel">取消</view>
 </view>
