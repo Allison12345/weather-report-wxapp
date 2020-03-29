@@ -1,12 +1,13 @@
 <view class="weather-search-cell">
   <view class="weather-search-cell__hd">{{ title }}</view>
-  <view class="weather-search-cell__bd">
+  <view class="weather-search-cell__bd" >
     <view
       class="weather-search-cell__item"
       wx:for="{{placeLists}}"
       wx:key="index"
+      bindtap='onCityChoose'
     >
-      <view class="weather-search-cell__content">{{ item }}</view>
+      <view class="weather-search-cell__content" >{{ item }}</view>
     </view>
   </view>
 </view>

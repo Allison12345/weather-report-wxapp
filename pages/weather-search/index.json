@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "my-weather-search": "../../components/my-weather-search/index",
     "weather-search-cell": "../../components/weather-search-cell/index"
   }
 }

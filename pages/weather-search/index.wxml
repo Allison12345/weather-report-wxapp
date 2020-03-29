@@ -1,8 +1,10 @@
 <view class="weather-search">
+  <my-weather-search></my-weather-search>
   <weather-search-cell
     wx:for="{{placeLists}}"
     wx:key="index"
     title="{{item.title}}"
     placeLists='{{item.citys}}'
+    bind:onCityChoose='onCityChoose'
   ></weather-search-cell>
 </view>

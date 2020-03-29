@@ -4,6 +4,8 @@ Component({
     placeLists:Array
   },
   methods: {
-
+    onCityChoose(item){
+      this.triggerEvent('onCityChoose',item)
+    }
   }
 })

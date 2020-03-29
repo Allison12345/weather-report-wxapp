@@ -1,0 +1,35 @@
+.my-weather-search{
+    display: flex;
+}
+.my-weather-outside{
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #ededed;
+    border-radius: 5%;
+    position: relative;
+}
+.my-weather-search__box{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.my-weather-search__icon{
+    width: 28px;
+    height: 28px;
+    margin-top: 3px;
+}
+.my-weather-search__content{
+    margin-left: 10px;
+    margin-top: 7px;
+}
+.my-weather-search__cancel{
+    margin-left: 15px;
+    margin-top: 20px;
+}

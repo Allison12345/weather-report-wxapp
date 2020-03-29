@@ -5,8 +5,11 @@ Page({
     currentPlaceLists:[],
     historyPlaceLists:[]
   },
-  onLoad:function(query){
+  onLoad(query){
     const {currentCity} = query
     console.log(currentCity)
+  },
+  onCityChoose(e){
+    console.log(e)
   }
 })
