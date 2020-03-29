@@ -1,6 +1,11 @@
 <view class="weather-search">
   <my-weather-search />
   <weather-search-cell
+    wx:if="{{currentCity}}"
+    title="当前定位"
+    placeList='{{[currentCity]}}'
+  />
+  <weather-search-cell
     wx:if="{{historyPlaceList.length}}"
     title="历史记录"
     placeList="{{historyPlaceList}}"

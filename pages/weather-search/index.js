@@ -2,12 +2,12 @@ const placeList = require('./config')
 Page({
   data: {
     placeList,
-    currentPlaceList: [],
+    currentCity: '',
     historyPlaceList: []
   },
   onLoad(query) {
-    const { currentCity } = query
-    console.log(currentCity)
+    const { currentCity = '' } = query
+    this.setData({currentCity})
   },
   onCityChoose(item) {
     const newHistoryList = this.data.historyPlaceList

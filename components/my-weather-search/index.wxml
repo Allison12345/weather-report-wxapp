@@ -8,11 +8,12 @@
         <input
           placeholder="搜索市,区,县等"
           type="text"
+          value="{{city}}"
           confirm-type="search"
           bindconfirm='onComfirm'
         />
       </view>
     </view>
   </view>
-  <view class="my-weather-search__cancel">取消</view>
+  <view class="my-weather-search__cancel" bindtap='onCancel'>取消</view>
 </view>

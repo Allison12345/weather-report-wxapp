@@ -8,27 +8,33 @@ Component({
     desc: String,
     local: Boolean
   },
-  data: {
-    city: ''
-  },
   methods: {
     onTap() {
       if (this.properties.local) {
-        this.getCurrentLoaction()
+        this.getCurrentLoaction(res => {
+          const { province, city, district } = res
+          wx.navigateTo({
+            url: `/pages/weather-page/index?city=${province + city + district}`
+          })
+        })
       } else {
-        wx.navigateTo({ url: '/pages/weather-search/index' })
+        this.getCurrentLoaction(res => {
+          const { city, district } = res
+          wx.navigateTo({
+            url: `/pages/weather-search/index?currentCity=${district || city}`
+          })
+        })
       }
     },
-    getCurrentLoaction() {
+    getCurrentLoaction(cb) {
       wx.getLocation({
         success: res => {
-          //this.getCity(res.latitude, res.longitude)
-          wx.navigateTo({ url: '/pages/weather-page/index' }),
-          console.log('local')
+          this.getCity(res.latitude, res.longitude, cb)
+          // wx.navigateTo({ url: '/pages/weather-page/index' })
         }
       })
     },
-    getCity(lat, lon) {
+    getCity(lat, lon, cb) {
       wx.request({
         url: `https://apis.map.qq.com/ws/geocoder/v1/?location=${lat},${lon}`,
         data: {
@@ -39,11 +45,7 @@ Component({
           'content-type': 'application/json'
         },
         success: res => {
-          const { province, city, district } = res.data.result.address_component
-          this.setData({ city: province + city + district })
-          wx.navigateTo({
-            url: `/pages/weather-page/index?city=${this.data.city}`
-          })
+          cb(res.data.result.address_component)
         }
       })
     }

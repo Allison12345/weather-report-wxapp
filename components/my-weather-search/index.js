@@ -5,6 +5,12 @@ Component({
     city: ''
   },
   methods: {
+    onCancel() {
+      this.setData({ city: '' })
+    },
+    onChange(e) {
+      this.setData({ city: e.detail.value })
+    },
     onComfirm(e) {
       this.getCityInfo(e.detail.value)
     },
