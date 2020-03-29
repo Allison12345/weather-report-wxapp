@@ -1,15 +1,23 @@
-const placeLists = require("./config")
+const placeList = require('./config')
 Page({
   data: {
-    placeLists:placeLists,
-    currentPlaceLists:[],
-    historyPlaceLists:[]
+    placeList,
+    currentPlaceList: [],
+    historyPlaceList: []
   },
-  onLoad(query){
-    const {currentCity} = query
+  onLoad(query) {
+    const { currentCity } = query
     console.log(currentCity)
   },
-  onCityChoose(e){
-    console.log(e)
+  onCityChoose(item) {
+    const newHistoryList = this.data.historyPlaceList
+    if(newHistoryList.indexOf(item.detail) > -1){
+      return
+    }
+    newHistoryList.push(item.detail)
+    this.setData({ historyPlaceList: newHistoryList })
+  },
+  onDelete(){
+    this.setData({historyPlaceList:[]})
   }
 })

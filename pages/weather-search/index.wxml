@@ -1,10 +1,17 @@
 <view class="weather-search">
-  <my-weather-search></my-weather-search>
+  <my-weather-search />
   <weather-search-cell
-    wx:for="{{placeLists}}"
+    wx:if="{{historyPlaceList.length}}"
+    title="历史记录"
+    placeList="{{historyPlaceList}}"
+    isNeedDelete
+    bind:onDelete='onDelete'
+  />
+  <weather-search-cell
+    wx:for="{{placeList}}"
     wx:key="index"
     title="{{item.title}}"
-    placeLists='{{item.citys}}'
-    bind:onCityChoose='onCityChoose'
-  ></weather-search-cell>
+    placeList="{{item.citys}}"
+    bind:onCityChoose="onCityChoose"
+  />
 </view>

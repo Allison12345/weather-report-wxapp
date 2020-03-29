@@ -9,5 +9,5 @@
           </view>
         </view>
       </view>
-      <view class="my-weather-search__cancel">取消</view>
+    <view class="my-weather-search__cancel">取消</view>
 </view>
