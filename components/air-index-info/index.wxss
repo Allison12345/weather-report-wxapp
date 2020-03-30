@@ -4,7 +4,6 @@
     justify-content: space-between;
     width: 250px;
     color: #fff;
-    border: 1px solid #ededed;
     position: absolute;
     top:70px;
     left:50%;

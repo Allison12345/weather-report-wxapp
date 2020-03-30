@@ -9,6 +9,7 @@
       wea="{{ cityInfo.data[0].wea }}"
       win="{{ cityInfo.data[0].win }}"
       win_speed="{{ cityInfo.data[0].win_speed }}"
+      tips='{{cityInfo.data[0].index[3].desc}}'
     ></main-info>
     <view class="wp-air-index">
       <air-index

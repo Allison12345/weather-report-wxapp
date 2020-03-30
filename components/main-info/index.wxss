@@ -15,8 +15,9 @@
   font-size: 24px;
 }
 .main-info-win{
-  font-size: 16px;
+  font-size: 14px;
 }
 .main-info-tips{
-  margin: 30px 0;
+  font-size: 14px;
+  margin: 20px 0;
 }

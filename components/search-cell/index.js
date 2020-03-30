@@ -31,6 +31,9 @@ Component({
         success: res => {
           this.getCity(res.latitude, res.longitude, cb)
           // wx.navigateTo({ url: '/pages/weather-page/index' })
+        },
+        fail: res => {
+          wx.showToast({title:res.message})
         }
       })
     },
@@ -47,6 +50,9 @@ Component({
         success: res => {
           console.log(res,'1')
           cb(res.data.result.address_component)
+        },
+        fail: res => {
+          wx.showToast({title:res.message})
         }
       })
     }

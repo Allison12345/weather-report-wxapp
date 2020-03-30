@@ -3,6 +3,7 @@ Component({
     tem:String,
     wea:String,
     win:Array,
-    win_speed:String
+    win_speed:String,
+    tips:String
   },
 })
