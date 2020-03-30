@@ -7,6 +7,7 @@
     "main-info": "../../components/main-info/index",
     "air-index": "../../components/air-index/index",
     "air-index-info": "../../components/air-index-info/index",
-    "today-air": "../../components/today-air/index"
+    "today-air": "../../components/today-air/index",
+    "hour-air": "../../components/hour-air/index"
   }
 }

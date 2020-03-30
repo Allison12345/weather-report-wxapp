@@ -2,12 +2,13 @@ Page({
   data: {
     city: '',
     currentCity: '',
-    cityInfo: '11111',
+    cityInfo: {},
     isInfoShown: false,
+    hourList: [],
     img:
-      "https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/pin-outline.svg?sign=d294216ec6cdfaf581514650f28dc43a&t=1585037342"
+      'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/pin-outline.svg?sign=d294216ec6cdfaf581514650f28dc43a&t=1585037342'
   },
-  onLoad: function (query) {
+  onLoad: function(query) {
     const { city } = query
     this.setData({ city, currentCity: city })
     this.cutString(city)
@@ -19,11 +20,18 @@ Page({
     this.setData({ isInfoShown: false })
   },
   cutString(city) {
-    var newCity = "";
-    for (var i = 0; i < city.length-1; i++) {
-      newCity += city.charAt(i);
-    }
+    const newCity = city.slice(0, 2)
     this.onWeatherChange(newCity)
+  },
+  hoursChange(cityInfo) {
+    if (cityInfo && cityInfo.data && cityInfo.data[0]) {
+      const newHourList=[...cityInfo.data[0].hours,...cityInfo.data[1].hours]
+      const hourList = newHourList.map(item => ({
+        ...item,
+        day: item.day.slice(-3)
+      }))
+      this.setData({ hourList })
+    }
   },
   onCityChange() {
     wx.navigateTo({
@@ -32,19 +40,20 @@ Page({
   },
   onWeatherChange(city) {
     wx.request({
-      url: "https://tianqiapi.com/api",
+      url: 'https://tianqiapi.com/api',
       data: {
         appid: 49573231,
-        appsecret: "1BGFuQlj",
-        version: "v1",
+        appsecret: '1BGFuQlj',
+        version: 'v1',
         city
       },
       header: {
         'content-type': 'application/json'
       },
       success: res => {
-        console.log(res, '2')
-        this.setData({ cityInfo: res.data })
+        const cityInfo = res.data
+        this.setData({ cityInfo })
+        this.hoursChange(cityInfo)
         console.log(this.data.cityInfo, 3)
       }
     })
