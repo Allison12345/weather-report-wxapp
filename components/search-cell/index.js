@@ -12,16 +12,16 @@ Component({
     onTap() {
       if (this.properties.local) {
         this.getCurrentLoaction(res => {
-          const { province, city, district } = res
+          const { city } = res
           wx.navigateTo({
-            url: `/pages/weather-page/index?city=${province + city + district}`
+            url: `/pages/weather-page/index?city=${city}`
           })
         })
       } else {
         this.getCurrentLoaction(res => {
-          const { city, district } = res
+          const { city, province } = res
           wx.navigateTo({
-            url: `/pages/weather-search/index?currentCity=${district || city}`
+            url: `/pages/weather-search/index?currentCity=${city || province}`
           })
         })
       }
@@ -45,6 +45,7 @@ Component({
           'content-type': 'application/json'
         },
         success: res => {
+          console.log(res,'1')
           cb(res.data.result.address_component)
         }
       })
