@@ -1,0 +1,13 @@
+<view class="week-air">
+    <view class="week-air-item" wx:for="{{cityInfo}}" wx:key='index'>
+        <view class="week-air-item__left">
+            <view class="week-air-left-left">{{item.week}}</view>
+            <view class="week-air-left-right">
+                <my-icon img="{{item.img}}"></my-icon>
+            </view>
+        </view>
+        <view class="week-air-item__right">
+            <view>{{item.tem1}}  ~  {{item.tem2}}</view>
+        </view>
+    </view>
+</view>

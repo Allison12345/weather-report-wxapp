@@ -25,10 +25,11 @@ Page({
     this.onWeatherChange(newCity)
   },
   cityInfoChange(cityInfo){
-    const newCityInfo = cityInfo.data[0].map(item =>({
+    const newCityInfo = cityInfo.data.map(item =>({
       ...item,
-      weaImg:weatherIcons[wea]
+      img:weatherIcons[item.wea]
     }))
+    console.log(newCityInfo)
     this.setData({cityInfo:newCityInfo})
   },
   hourListChange(cityInfo) {
@@ -62,7 +63,7 @@ Page({
       },
       success: res => {
         const cityInfo = res.data
-        this.setData({ cityInfo })
+        this.cityInfoChange(cityInfo)
         this.hourListChange(cityInfo)
       }
     })

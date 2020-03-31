@@ -1,0 +1,23 @@
+.week-air{
+    background-color: #fff;
+    margin: 5px 0 
+}
+.week-air-item{
+ width: 100%;
+padding: 10px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+box-sizing: border-box;
+
+}
+.week-air-item__left{
+    margin-left: 10px;
+    display: flex;
+}
+.week-air-left-right{
+    width: 24px;
+    height: 24px;
+    margin-left: 115px;
+}

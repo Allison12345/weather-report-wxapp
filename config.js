@@ -66,6 +66,7 @@ module.exports = {
     "晴转阵雨": "https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/weather-icons/often-rain.png?sign=0909eb81d80ec0febd0724b0000577e8&t=1585642220",
     "中雨转阵雨": 'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/weather-icons/often-rain.png?sign=0909eb81d80ec0febd0724b0000577e8&t=1585642220',
     "阵雨转雷阵雨": 'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/weather-icons/thunder%20and%20rain.png?sign=7ab32cc8f0cd8aea70e66988e53526a5&t=1585642272',
+    "阴转雷阵雨":'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/weather-icons/thunder%20and%20rain.png?sign=7ab32cc8f0cd8aea70e66988e53526a5&t=1585642272',
     "多云转大雪": 'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/weather-icons/big-snow.png?sign=8bbb41bc8d85c5a555d51608d22e38ec&t=1585642295',
     "阴转中雪": '',
     "阴转大雪": "https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/weather-icons/big-snow.png?sign=8bbb41bc8d85c5a555d51608d22e38ec&t=1585642295",

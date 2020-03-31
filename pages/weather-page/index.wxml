@@ -1,36 +1,37 @@
-<view class="weather-page bg-eded full">
+<scroll-view class="weather-page bg-eded full" scroll-y='{{true}}'>
   <view class="wp-image">
     <view class="wp-hd flex-x-cc" bindtap="onCityChange">
       <my-icon class="wp-my-icon" img="{{ img }}"></my-icon>
       <current-location-change city="{{ city }}"></current-location-change>
     </view>
     <main-info
-      tem="{{ cityInfo.data[0].tem }}"
-      wea="{{ cityInfo.data[0].wea }}"
-      win="{{ cityInfo.data[0].win }}"
-      win_speed="{{ cityInfo.data[0].win_speed }}"
-      tips='{{cityInfo.data[0].index[3].desc}}'
+      tem="{{ cityInfo[0].tem }}"
+      wea="{{ cityInfo[0].wea }}"
+      win="{{ cityInfo[0].win }}"
+      win_speed="{{ cityInfo[0].win_speed }}"
+      tips='{{cityInfo[0].index[3].desc}}'
     ></main-info>
     <view class="wp-air-index">
       <air-index
-        air="{{ cityInfo.data[0].air }}"
-        air_level="{{ cityInfo.data[0].air_level }}"
+        air="{{ cityInfo[0].air }}"
+        air_level="{{ cityInfo[0].air_level }}"
         bind:onInfoShow="onInfoShow"
       ></air-index>
     </view>
     <air-index-info
       wx:if="{{ isInfoShown }}"
-      air="{{ cityInfo.data[0].air }}"
-      air_level="{{ cityInfo.data[0].air_level }}"
-      air_tips="{{ cityInfo.data[0].air_tips }}"
+      air="{{ cityInfo[0].air }}"
+      air_level="{{ cityInfo[0].air_level }}"
+      air_tips="{{ cityInfo[0].air_tips }}"
       bind:onInfoClose="onInfoClose"
     ></air-index-info>
   </view>
   <today-air
-    week="{{ cityInfo.data[0].week }}"
-    tem1="{{ cityInfo.data[0].tem1 }}"
-    tem2="{{ cityInfo.data[0].tem2 }}"
-    img="{{hourList[0].img}}"
+    week="{{ cityInfo[0].week }}"
+    tem1="{{ cityInfo[0].tem1 }}"
+    tem2="{{ cityInfo[0].tem2 }}"
+    img="{{cityInfo[0].img}}"
   ></today-air>
   <hour-air wx:if="{{hourList&&hourList.length}}" hours="{{hourList}}"></hour-air>
-</view>
+  <week-air cityInfo='{{cityInfo}}'></week-air>
+</scroll-view>
