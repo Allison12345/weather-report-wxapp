@@ -3,7 +3,7 @@
     <view class="hour-air__box" wx:for="{{hours}}" wx:key='index'>
       <view class="hour-air__hd">{{item.day}}</view>
       <view class="hour-air__bd">
-        <my-icon img='{{img}}'></my-icon>
+        <my-icon img='{{item.img}}'></my-icon>
       </view>
       <view class="hour-air__ft">{{item.tem}}</view>
     </view>

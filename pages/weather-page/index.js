@@ -1,3 +1,4 @@
+const weatherIcons = require('../../config.js')
 Page({
   data: {
     city: '',
@@ -23,14 +24,23 @@ Page({
     const newCity = city.slice(0, 2)
     this.onWeatherChange(newCity)
   },
-  hoursChange(cityInfo) {
+  cityInfoChange(cityInfo){
+    const newCityInfo = cityInfo.data[0].map(item =>({
+      ...item,
+      weaImg:weatherIcons[wea]
+    }))
+    this.setData({cityInfo:newCityInfo})
+  },
+  hourListChange(cityInfo) {
     if (cityInfo && cityInfo.data && cityInfo.data[0]) {
       const newHourList=[...cityInfo.data[0].hours,...cityInfo.data[1].hours]
       const hourList = newHourList.map(item => ({
         ...item,
+        img:weatherIcons[item.wea],
         day: item.day.slice(-3)
       }))
       this.setData({ hourList })
+      console.log(hourList)
     }
   },
   onCityChange() {
@@ -53,8 +63,7 @@ Page({
       success: res => {
         const cityInfo = res.data
         this.setData({ cityInfo })
-        this.hoursChange(cityInfo)
-        console.log(this.data.cityInfo, 3)
+        this.hourListChange(cityInfo)
       }
     })
   }

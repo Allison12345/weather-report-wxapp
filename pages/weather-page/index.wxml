@@ -30,6 +30,7 @@
     week="{{ cityInfo.data[0].week }}"
     tem1="{{ cityInfo.data[0].tem1 }}"
     tem2="{{ cityInfo.data[0].tem2 }}"
+    img="{{hourList[0].img}}"
   ></today-air>
   <hour-air wx:if="{{hourList&&hourList.length}}" hours="{{hourList}}"></hour-air>
 </view>
