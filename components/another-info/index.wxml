@@ -1,0 +1,8 @@
+<view class="another-info">
+    <view class="another-info-container" wx:for='{{anotherInfo}}' wx:key='index' wx:for-item='row'>
+        <view class="another-info-item"  wx:for='{{row}}' wx:key='index'>
+            <view class="another-info-label">{{item.label}}</view>
+            <view class="another-info-desc">{{item.value}}</view>
+        </view>
+    </view>
+</view>

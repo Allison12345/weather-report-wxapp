@@ -1,0 +1,20 @@
+.another-info{
+    background-color: #fff;
+}
+.another-info-container{
+    display: inline-block;
+}
+.another-info-item{
+    margin: 18px;
+    padding: 0 10px;
+    border-bottom: 1px solid #ededed;
+    text-align: left;
+}
+.another-info-label{
+    font-size: small;
+    color: #666;
+    margin: 5px 0;
+}
+.another-info-desc{
+    margin: 5px 0;
+}

@@ -34,4 +34,5 @@
   ></today-air>
   <hour-air wx:if="{{hourList&&hourList.length}}" hours="{{hourList}}"></hour-air>
   <week-air cityInfo='{{cityInfo}}'></week-air>
+  <another-info anotherInfo='{{anotherInfo}}'></another-info>
 </scroll-view>

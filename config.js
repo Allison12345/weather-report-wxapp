@@ -5,7 +5,7 @@ module.exports = {
     "雨夹雪": 'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/weather-icons/rain%20and%20snow%20mixd.png?sign=a6e44548641c3c53ea3aca19527bdc5c&t=1585640425',
     "小雨": 'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/weather-icons/littel-rain.png?sign=e7a7b2cba77b6f3dfb63ef8ce0f2d702&t=1585640477',
     "中雨": 'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/weather-icons/middle-rain.png?sign=d35e3ce5c5f8838a6f6d99bb1b87025a&t=1585640499',
-    "阵雨": 'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/weather-icons/often-rain.png?sign=850cd947a206e66369a4ae41bbdfe2f7&t=1585640794',
+    "阵雨": 'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/weather-icons/often-rain.png?sign=b66ade0f29ea6e85f8035b62edfe1b55&t=1585666150',
     "小雪": 'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/weather-icons/small-snow.png?sign=fa3cccad54e5949abdc7f837bd1a002c&t=1585640839',
     "中雪": 'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/weather-icons/middle-snow.png?sign=597f3c856f8a43e4ccc5751ecc398343&t=1585640865',
     "大雪": 'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/weather-icons/big-snow.png?sign=cfce0e314aa9f9593ccdcfaed8fe219c&t=1585640883',

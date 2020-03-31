@@ -16,6 +16,7 @@ Page({
     }
     newHistoryList.push(item.detail)
     this.setData({ historyPlaceList: newHistoryList })
+    wx.navigateTo({url:`/pages/weather-page/index?city=${item.detail}`})
   },
   onDelete(){
     this.setData({historyPlaceList:[]})

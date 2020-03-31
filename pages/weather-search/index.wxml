@@ -4,6 +4,7 @@
     wx:if="{{currentCity}}"
     title="当前定位"
     placeList='{{[currentCity]}}'
+    bind:onCityChoose="onCityChoose"
   />
   <weather-search-cell
     wx:if="{{historyPlaceList.length}}"

@@ -9,6 +9,7 @@
     "air-index-info": "../../components/air-index-info/index",
     "today-air": "../../components/today-air/index",
     "hour-air": "../../components/hour-air/index",
-    "week-air": "../../components/week-air/index"
+    "week-air": "../../components/week-air/index",
+    "another-info": "../../components/another-info/index"
   }
 }
