@@ -3,6 +3,6 @@ Component({
     hours: Array
   },
   data: {
-    img: "https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/pin-outline.png?sign=f91a4591de3d20bd74507e0adf04ef77&t=1585307262",
+    img: 'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/clear%20to%20light%20rain.png?sign=51ab68125d9263d19bdc36ea914c436f&t=1585635683'
   },
 })
