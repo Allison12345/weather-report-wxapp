@@ -1,21 +1,27 @@
-<my-page>
-  <my-cells class="txt-center">
-    <my-pic img="{{ img }}"></my-pic>
-    <view class="xa-txt">小艾天气</view>
-  </my-cells>
-  <my-cells>
-    <view class="tq-txt">天气</view>
-    <view class="flex"
-      ><search-cell
-        class="flex-1"
-        wx:for="{{ searchLists }}"
-        wx:key="index"
-        img="{{ item.img }}"
-        title="{{ item.title }}"
-        desc="{{ item.desc }}"
-        local="{{ item.local }}"
-      ></search-cell
-    ></view>
-  </my-cells>
-  <my-cells><quote></quote></my-cells>
-</my-page>
+<scroll-view scroll-y="{{true}}">
+  <my-page>
+    <my-cells class="txt-center">
+      <my-pic img="{{ img }}"></my-pic>
+      <view class="xa-txt">小艾天气</view>
+    </my-cells>
+    <my-cells>
+      <view class="tq-txt">天气</view>
+      <view class="flex"
+        ><search-cell
+          class="flex-1"
+          wx:for="{{ searchLists }}"
+          wx:key="index"
+          img="{{ item.img }}"
+          title="{{ item.title }}"
+          desc="{{ item.desc }}"
+          local="{{ item.local }}"
+        ></search-cell
+      ></view>
+    </my-cells>
+    <my-cells><quote></quote></my-cells>
+    <view class="home-bottom txt-center">
+      <view>问题反馈</view>
+      <view>2562392373@qq.com</view>
+    </view> 
+  </my-page> 
+</scroll-view>

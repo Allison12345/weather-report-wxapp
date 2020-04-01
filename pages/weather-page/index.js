@@ -9,6 +9,7 @@ Page({
     isInfoShown: false,
     zwx:'',
     hourList: [],
+    bgImg:'',
     img:
       'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/pin-outline.svg?sign=d294216ec6cdfaf581514650f28dc43a&t=1585037342'
   },
@@ -16,6 +17,17 @@ Page({
     const { city } = query
     this.setData({ city, currentCity: city })
     this.cutString(city)
+    this.getcurrenthour()
+  },
+  getcurrenthour(){
+    const date = new Date()
+    const hour = date.getHours()
+    if(hour>=8&&hour<20){
+      this.setData({bgImg:'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/bg-weather/WechatIMG79.jpeg?sign=684ec731147b142d74379379d592c42d&t=1585744199'})
+    }else{
+      this.setData({bgImg:'https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/bg-weather/night.gif?sign=3c203f6e54ccc542ed1d9ee28160f12c&t=1585744224'})
+    }
+    console.log(hour)
   },
   onInfoShow() {
     this.setData({ isInfoShown: true })

@@ -10,7 +10,7 @@
     transform: translateX(-50%);
 }
 .air-index-info__bd{
-    background-image: url("https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/timg.jpg?sign=b67725f61459373e1de7247b6bf1280d&t=1585310362");
+    background-image: url("https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/bg-weather/timg.gif?sign=d9d7fa4eb86dc949076ef7ad8a59590e&t=1585743652");
     background-size: cover;
     padding-bottom: 50px;
     padding-top: 5px;

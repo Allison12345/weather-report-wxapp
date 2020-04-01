@@ -8,3 +8,8 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.home-bottom{
+  font-size: small;
+  color: #666;
+  margin: 20px 0;
+}

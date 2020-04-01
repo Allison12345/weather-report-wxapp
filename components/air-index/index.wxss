@@ -1,6 +1,6 @@
 .air-index {
   border-radius: 25%;
-  padding: 3px 10px;
+  padding: 4px 12px;
   color: #fff;
 }
 .air-index__hd{

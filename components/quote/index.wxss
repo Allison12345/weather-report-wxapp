@@ -1,6 +1,6 @@
 .quote {
   height: 300px;
-  background-image: url("https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/u%3D952675025%2C1052748055%26fm%3D26%26gp%3D0.jpg?sign=eb4e230c097beaff8c8be1160f7e8437&t=1585310287");
+  background-image: url("https://6d79-mywxapp-q4z0b-1301425530.tcb.qcloud.la/bg-weather/WechatIMG80.jpeg?sign=e31ef257515233fd1fe59e6ac3925b36&t=1585745104");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -17,5 +17,4 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 2555, 0.3);
 }

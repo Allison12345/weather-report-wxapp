@@ -1,5 +1,5 @@
 <scroll-view class="weather-page bg-eded full" scroll-y='{{true}}'>
-  <view class="wp-image">
+  <view class="wp-image" style='background-image: url({{bgImg}});'>
     <view class="wp-hd flex-x-cc" bindtap="onCityChange">
       <my-icon class="wp-my-icon" img="{{ img }}"></my-icon>
       <current-location-change city="{{ city }}"></current-location-change>
