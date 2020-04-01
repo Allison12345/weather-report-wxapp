@@ -32,8 +32,12 @@ Page({
     const zwx = info.data[0].index[0].level
     const cityInfo = info.data.map(item => ({
       ...item,
+      tem: parseInt(item.tem),
+      tem1:parseInt(item.tem1),
+      tem2:parseInt(item.tem2),
       img: weatherIcons[item.wea]
     }))
+    console.log(cityInfo,'skdfksdhfk')
     this.setData({ cityInfo,zwx })
   },
   hourListChange(cityInfo) {

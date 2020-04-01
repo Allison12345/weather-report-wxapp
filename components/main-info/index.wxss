@@ -8,11 +8,11 @@
   width:100%
 }
 .main-info-tem{
-  font-size: 72px;
+  font-size: 96px;
   font-weight: 300;
 }
 .main-info-wea{
-  margin: 10px;
+  margin-bottom: 8px;
   font-size: 24px;
 }
 .main-info-win{
@@ -20,5 +20,5 @@
 }
 .main-info-tips{
   font-size: 14px;
-  margin: 20px 0;
+  margin: 10px 0;
 }
