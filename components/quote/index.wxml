@@ -1,3 +1,6 @@
-<view class="quote">
-  <view class="quote-cover">{{ content }} </view>
+<view class="quote" >
+  <block wx:if="{{content}}">
+    <view class="quote-title">每日一句</view>
+    <view class="quote-content">{{ content }} </view>
+  </block>
 </view>

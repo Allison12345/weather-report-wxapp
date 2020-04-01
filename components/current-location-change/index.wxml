@@ -1,1 +1,1 @@
-<p class="air-index" bindtap="onTap">{{ city }}</p>
+<p class="air-index">{{ city }}</p>

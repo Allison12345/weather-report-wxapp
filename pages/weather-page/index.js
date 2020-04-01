@@ -16,10 +16,10 @@ Page({
   onLoad: function(query) {
     const { city } = query
     this.setData({ city, currentCity: city })
-    this.cutString(city)
-    this.getcurrenthour()
+    this.cutCity(city)
+    this.getCurrentHour()
   },
-  getcurrenthour(){
+  getCurrentHour(){
     const date = new Date()
     const hour = date.getHours()
     if(hour>=8&&hour<20){
@@ -35,12 +35,11 @@ Page({
   onInfoClose() {
     this.setData({ isInfoShown: false })
   },
-  cutString(city) {
+  cutCity(city) {
     const newCity = city.slice(0, 2)
-    this.onWeatherChange(newCity)
-    this.onAnotherInfo(newCity)
+    this.getCityInfo(newCity)
   },
-  cityInfoChange(info) {
+  changeCityInfo(info) {
     const zwx = info.data[0].index[0].level
     const cityInfo = info.data.map(item => ({
       ...item,
@@ -52,7 +51,7 @@ Page({
     console.log(cityInfo,'skdfksdhfk')
     this.setData({ cityInfo,zwx })
   },
-  hourListChange(cityInfo) {
+  changeHourList(cityInfo) {
     if (cityInfo && cityInfo.data && cityInfo.data[0]) {
       const newHourList = [...cityInfo.data[0].hours, ...cityInfo.data[1].hours]
       const hourList = newHourList.map(item => ({
@@ -63,12 +62,7 @@ Page({
       this.setData({ hourList })
     }
   },
-  onCityChange() {
-    wx.navigateTo({
-      url: `/pages/weather-search/index?currentCity=${this.data.currentCity}`
-    })
-  },
-  anotherInfoChange(info) {
+  changeAnotherInfo(info) {
     const anotherInfo = anotherInfoConfig.map(row =>
       row.map(([label, prop]) => ({
         label,
@@ -77,7 +71,7 @@ Page({
     )
     this.setData({anotherInfo})
   },
-  onAnotherInfo(city) {
+  getAnotherInfo(city) {
     wx.request({
       url: 'https://tianqiapi.com/api',
       data: {
@@ -92,11 +86,11 @@ Page({
       success: res => {
         const anotherInfo = res.data
         anotherInfo.level = this.data.zwx
-        this.anotherInfoChange(anotherInfo)
+        this.changeAnotherInfo(anotherInfo)
       }
     })
   },
-  onWeatherChange(city) {
+  getCityInfo(city) {
     wx.request({
       url: 'https://tianqiapi.com/api',
       data: {
@@ -110,8 +104,9 @@ Page({
       },
       success: res => {
         const cityInfo = res.data
-        this.cityInfoChange(cityInfo)
-        this.hourListChange(cityInfo)
+        this.changeCityInfo(cityInfo)
+        this.changeHourList(cityInfo)
+        this.getAnotherInfo(city)
       }
     })
   }

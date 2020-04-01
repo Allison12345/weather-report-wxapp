@@ -18,10 +18,11 @@
         ></search-cell
       ></view>
     </my-cells>
+    <view class="home-img"></view>
     <my-cells><quote></quote></my-cells>
     <view class="home-bottom txt-center">
       <view>问题反馈</view>
       <view>2562392373@qq.com</view>
-    </view> 
+    </view>
   </my-page> 
 </scroll-view>
