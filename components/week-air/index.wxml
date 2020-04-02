@@ -2,13 +2,15 @@
     <view class="week-air-item" wx:for="{{cityInfo}}" wx:key='index'>
         <view class="week-air-item__left">
             <view class="week-air-left-left">{{item.week}}</view>
-            <view class="week-air-left-right">
+        </view>
+        <view class="week-air-item__middle">
+            <view class="week-air-item__icon">
                 <my-icon img="{{item.img}}"></my-icon>
             </view>
         </view>
         <view class="week-air-item__right">
             <p class="week-air-item__right-left">{{item.tem1}}</p>
-            <p>{{item.tem2}}</p>
+            <p class="week-air-item__right-right">{{item.tem2}}</p>
         </view>
     </view>
 </view>

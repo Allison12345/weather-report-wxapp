@@ -12,14 +12,24 @@ box-sizing: border-box;
 
 }
 .week-air-item__left{
-    display: flex;
+    flex: 0.45;
 }
-.week-air-left-right{
+.week-air-item__middle{
+    flex:0.3;
+    margin: auto;
+}
+.week-air-item__icon{
     width: 22px;
     height: 22px;
-    margin-left: 115px;
+}
+.week-air-item__right{
+    flex:0.15;
+    display: flex;
+    margin: auto;
 }
 .week-air-item__right-left{
-   margin-left: 110px;
-   margin-right: 20px;
+    flex:1;
+}
+.week-air-item__right-right{
+    flex:1;
 }
