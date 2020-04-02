@@ -28,8 +28,8 @@ box-sizing: border-box;
     margin: auto;
 }
 .week-air-item__right-left{
-    flex:1;
+    flex:0.7;
 }
 .week-air-item__right-right{
-    flex:1;
+    flex:0.3;
 }

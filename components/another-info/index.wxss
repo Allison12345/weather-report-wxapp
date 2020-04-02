@@ -1,5 +1,6 @@
 .another-info{
     background-color: #fff;
+    margin-bottom: 20px;
 }
 .another-info-container{
     display: flex;
