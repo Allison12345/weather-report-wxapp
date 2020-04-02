@@ -23,6 +23,7 @@
     <view class="home-bottom txt-center">
       <view>问题反馈</view>
       <view>2562392373@qq.com</view>
+      <view>https://github.com/Allison12345/weather-report-wxapp</view>
     </view>
   </my-page> 
 </scroll-view>
